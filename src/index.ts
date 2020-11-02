@@ -1,6 +1,10 @@
-import ShareButton from "./ShareButton";
+import ShareButtonTwitter from "./ShareButtonTwitter";
+import ShareButtonFacebook from "./ShareButtonFacebook";
+import ShareButtonLinkedin from "./ShareButtonLinkedin";
 
-const shareButton = new ShareButton("https://www.youtube.com/rodrigobranas");
-shareButton.bind(".btn-twitter", "twitter");
-shareButton.bind(".btn-facebook", "facebook");
-shareButton.bind(".btn-linkedin", "linkedin");
+const twitter = new ShareButtonTwitter(".btn-twitter", "https://.youtube.com/rodrigobranas");
+twitter.bind();
+const facebook = new ShareButtonFacebook(".btn-facebook", "https://.youtube.com/rodrigobranas");
+facebook.bind();
+const linkedin = new ShareButtonLinkedin(".btn-linkedin", "https://.youtube.com/rodrigobranas");
+linkedin.bind();
